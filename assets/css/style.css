@@ -635,6 +635,8 @@ body .width-100per {
 	.top-space {
 		padding-top: 100px;
 	}
+
+	
 }
 .heading-block h2 span {
 	display: block;
@@ -646,6 +648,8 @@ body .width-100per {
 	.width-75per {
 		width: 70%;
 	}
+
+	
 }
 @media (max-width: 767px) {
 	.width-25per {
@@ -1613,6 +1617,8 @@ form label.error {
 		padding-left: 26px;
 		padding-right: 24px;
 	}
+
+	
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.navigation {
@@ -1651,6 +1657,8 @@ form label.error {
 	.top-contact  .welcome-text {
 		font-size: 11px;
 	}
+
+	
 }
 @media (max-width: 767px) {
 	.container {
@@ -2581,6 +2589,8 @@ form label.error {
 		top: -59px;
 		left: 0;
 	}
+
+	
 }
 .single-blog-post .content-box .date-box {
 	padding-right: 25px;

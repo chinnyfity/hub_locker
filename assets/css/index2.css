@@ -3,6 +3,95 @@
 	margin: 0px;
 }
 
+
+.input_container, .close-icon {
+	position: relative;
+}
+
+#country_list_id {
+	display: none;
+}
+
+#country_list_id{
+  width: 42%;
+  margin-left:5.3em;
+  margin-top:-1px;
+  border: 1px solid #999;
+  position: absolute !important;
+  top: 21.6em !important;
+  color:#222;
+  z-index: 99 !important;
+  background: rgba(238, 238, 238, 0.9);
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflows:hidden;
+  box-shadow:0 5px 10px -2px rgba(0,0,0,.41);
+}
+
+#country_list_id i{color:#ce1b1b !important;}
+
+li.set_item {
+  padding: 3px 10px;
+  text-align:left;
+  margin-left: -35px;
+  cursor:pointer !important;
+  font-size: 15px !important;
+  color:#222 !important;
+  letter-spacing: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+li.set_item:hover {
+	background: #ccc;
+  	color:#D7B343;
+}
+
+.close-icon {
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+	outline: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 999;
+	margin-left: -18px;
+	right: 13.5em;
+}
+
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 25px;
+	height: 24px;
+	position: absolute;
+	background-color: #DE4D2D;
+	z-index:1;
+	right: 35px;
+	top: 17px;
+	margin: auto;
+	padding: 2px 2px 3px 1.5px;
+	line-height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: 600 !important;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.close-icon:hover:after {
+	background-color: #bb3f23;
+}
+
+.close-icon {
+	display: none;
+}
+
+
 button{
 	outline: none !important;
 }
@@ -52,14 +141,39 @@ button{
     top: 50%;
     right: 130%;
     background: #ff8000;
+	/* background: #c46e17; */
     z-index: 9;
 }
 
 
-table.all_tables1_ th, .all_tables1 th{background:#242a33 !important; font-size:14px; color:#eee !important;}
-.all_tables1_ td, .all_tables1 td{color:#333 !important; font-size:14px;}
-.all_tables1_ td a, .all_tables1 td a{color:#ee4747 !important; font-size:14px;}
-.all_tables1_{width:100% !important;}
+table.all_tables1_ th{
+	background:#242a33 !important; font-size:14px; color:#eee !important;
+	text-align: left !important;
+	display: none !important;
+}
+.all_tables1_ td{
+	color:#333 !important; font-size:14px; text-align: left !important;
+	padding: 12px 10px 12px 10px !important;
+	font-weight: 600; line-height: 20px;
+}
+
+.all_tables1_ td a{color:#ee4747 !important; font-size:14px;}
+.all_tables1_{width:99% !important; overflow: hidden !important;}
+
+.btn_rent{
+	background-color: #47b464;
+	color:#fff;
+	padding: 8px 20px;
+	display: block;
+	width: 115px;
+	text-align: center;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.btn_rent:hover{
+	background-color: #25793b;
+}
 
 .dataTables_filter input, #tbl_search_length, #tbl_search_filter{display: none !important}
 
@@ -110,15 +224,27 @@ table.all_tables1_ th, .all_tables1 th{background:#242a33 !important; font-size:
     -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 
+.view_size{
+	position: relative;
+	z-index: 99;
+	margin-top: -10px;
+	font-size: 13px;
+}
+
+
+.view_size a{
+	color:#007BB6;
+}
+
 
 .textbox-action{
 	width: 300px;
 	paddings:18px 15px;
 	text-align: center;
-	margin-top: 4.9px;
+	margin-top: 4.95px;
 	background: url(../images/btns.jpg) no-repeat 0 0;
 	cursor: pointer;
-	margin-right: -8px;
+	margin-right: -17px;
 }
 
 
@@ -278,7 +404,7 @@ table.all_tables1_ th, .all_tables1 th{background:#242a33 !important; font-size:
 }
 
 .banner_up{
-	height: 400px !important;
+	height: 480px !important;
 	overflow: hidden !important;
 }
 
@@ -449,6 +575,8 @@ table.all_tables1_ th, .all_tables1 th{background:#242a33 !important; font-size:
 	.point_view{
 		display: block;
 	}
+
+	
 }
 /* Service */
 .item_service {
@@ -637,6 +765,7 @@ table.all_tables1_ th, .all_tables1 th{background:#242a33 !important; font-size:
 	.banner_up{
 		height: auto !important;
 		
+		
 	}
 }
 
@@ -795,6 +924,8 @@ table.all_tables1_ th, .all_tables1 th{background:#242a33 !important; font-size:
 	.dots_style .owl-dots{
 		margin-top: 30px;
 	}
+
+	
 }
 
 

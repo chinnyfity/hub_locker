@@ -9,14 +9,8 @@ $(document).on('ready',function() {
 		var stricky_header_top = $('.nav-wrap');
 	if (stricky_header_top.length) {
 		var stricky_header_top_Offset = headerHeight.height();
-		$(window).on('scroll',function() {
-			var top_scroll = $(window).scrollTop();
-			if (top_scroll > stricky_header_top_Offset) {
-				stricky_header_top.addClass('stricky');
-			} else {
-				stricky_header_top.removeClass('stricky');
-			}
-		});
+
+		stricky_header_top.addClass('stricky');
 	}
 	}
 	navBaar();
