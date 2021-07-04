@@ -196,7 +196,7 @@
 			</div>
 
 		</div>
-
+		<!--  Main Banner End Here-->
 
 		<div class="gray-bg1 mt-xs--20_ pt-15 pb-15 count_bg">
 			<div class="container pl-0 pl-md-30 pl-xs-20">
@@ -229,7 +229,7 @@
 					<div class="col-sm-2 left_info">
 						<img src="assets/images/img1.jpg" alt="">
 						<p>22A Adeola Odeku Street, VI, Lagos</p>
-						<div class="text-left">
+						<div class="text-left"></div>
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
 							<span class="fa fa-star checked"></span>
