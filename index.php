@@ -132,7 +132,21 @@
 							data-splitin="none"
 							data-splitout="none"
 							data-responsive_offset="on" >
-								
+								<div class="banner-text mt--10">
+									<h2>Find a Locker</h2>
+
+									<div class="textbox">
+										<div class="textbox-box">
+											<div class="textbox-field">
+												<input class="textbox-text txtsearchs" type="text" placeholder="Enter City or State" />
+											</div>
+
+											<div class="textbox-action">
+												
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</li>
 						<!-- SLIDE  -->
@@ -159,7 +173,21 @@
 							data-splitin="none"
 							data-splitout="none"
 							data-responsive_offset="on">
-								
+								<div class="banner-text mt--10">
+									<h2>Find a Locker</h2>
+
+									<div class="textbox">
+										<div class="textbox-box">
+											<div class="textbox-field">
+												<input class="textbox-text txtsearchs" type="text" placeholder="Enter City or State" />
+											</div>
+
+											<div class="textbox-action">
+												
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</li>
 					</ul>
