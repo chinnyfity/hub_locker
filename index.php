@@ -198,6 +198,76 @@
 		</div>
 
 
+		<div class="gray-bg1 mt-xs--20_ pt-15 pb-15 count_bg">
+			<div class="container pl-0 pl-md-30 pl-xs-20">
+				<div class="row">
+
+					<div class="col-lg-9 pl-0" style="backgrounds: red">
+						<div class="pl-20_ count_items">
+							<div>6 Open Lockers Available</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 text-right" style="backgrounds: yellow">
+						<div class="mt--5 mt-xs--30">
+							<label>Sort By:</label>
+							<select>
+								<option value="closest">Closest</option>
+								<option value="lowest">Lowest Price</option>
+								<option value="highest">Highest Price</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section-bar pt-20">
+			<div class="container_ pl-20 pr-20">
+				<div class="row pb-60 pb-xs-30 text-center">
+
+					<div class="col-sm-2 left_info">
+						<img src="assets/images/img1.jpg" alt="">
+						<p>22A Adeola Odeku Street, VI, Lagos</p>
+						<div class="text-left">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p>0.3 Miles Away</p>
+					</div>
+
+
+					<div class="col-sm-10 p-xs-0">
+						<div class="text-left featured_sel mt-xs-15">
+							<select>
+								<option value="small">Small</option>
+								<option value="medium">Medium</option>
+								<option value="large">Large</option>
+							</select>
+						</div>
+
+						<div class="box-body mt--10">
+							<div class="table-responsive project-table">
+								<table id="tbl_search_" class="table table-striped table-bordered display responsive wrap all_tables1_" cellspacing="0">
+									<thead>
+										<tr>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+											<th></th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		
 
