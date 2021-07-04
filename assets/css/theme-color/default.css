@@ -1,0 +1,117 @@
+/* HOME_PAGE */
+/*
+============== background Color====================
+*/
+.main-menu__block, .navgation__block, .tparrows.tp-leftarrow:hover, .tparrows.tp-rightarrow:hover, .top_section__block .single_top__block,
+.about-section__block:before, .plan-content-box, .member_S_links__block, .bottom-section, .reletiv_box .navigation > ul > li > a:hover:before,
+.icons-hover-black i:hover, .present_text div .one, .present_text div .two, .counter_box .single-fact .counter:before, .link-zoom a.same_style,
+.test_designation, .dots_style .owl-dots .owl-dot, .post_date, .footer_logo ul li a:hover, .navigation .sub-nav li a:before,
+.icon_box, .icon_abslt, .email_fill .form-field .btn-text:hover, .team_follow ul li a, #footer-widgets .widget .widget-title > span::after,
+#footer-widgets .widget.widget_socials .socials a:hover:before, .counterUp_wrapper__block::before, .header-1 .nav-wrap,
+.homeforur:before, .homeforur .logo, .homeforur .logo:after, .main-menu__block ul li:hover > a, nav.navbar.bootsnav ul.nav > li > a.custom-btn,
+nav.navbar.bootsnav ul.nav > li > a.custom-btn {
+  background: #ABA044;
+}
+
+.main-menu__block ul li a.custom_btn__block, .main-menu__block ul li:hover > a, .single_top__block:before,
+.plan-content-box h3::after {
+  background: #7d5501;
+}
+
+.social_box {
+  background: #ABA044;
+  /* The Fallback */
+  background: rgba(251, 172, 2, 0.8);
+}
+
+@media (max-width: 767px) {
+  .navgation__block .main-menu__block ul ul li {
+    background: #7d5501;
+  }
+}
+/*
+============== Text Color====================
+*/
+.social-link__block a i.fa, .top-info__block li i, .latest__block-title:hover a, .more_btn__block, .reletiv_box .navigation > ul > li > a:hover,
+.reletiv_box .navigation .sub-nav li a:hover, .section-heading span, .present_text div .cons-icon, .left_consicon,
+.counter_box .single-fact .counter, .home_hork .gallery-heading h4 a:hover, .test_prag .size_icon, .link_footer ul li a:hover,
+.footer-latest-news .single-news span, .footer-latest-news .single-news h5 a:hover, .top_loction ul li a:hover, .bor_top a, .header .info-item .fa,
+.header .info-item, #footer-widgets .widget.widget_socials .socials a:hover:before, #copyright a, .top-info__block p,
+nav.navbar.bootsnav ul.nav > li > a, .boxed_btn__block, .info-item a, .btn-text:hover, .testimonial_carosule-wrap .owl-nav button {
+  color: #ABA044;
+}
+
+/*
+============== Border Color====================
+*/
+.tparrows.tp-leftarrow:hover, .tparrows.tp-rightarrow:hover, .left_consicon, .testimo_item, .test_picher, .footer_logo ul li a:hover,
+.header .info-item .fa, .icon_box, .team_row:hover, .testimonial_carosule-wrap .owl-nav button {
+  border-color: #ABA044;
+}
+
+/* INNER_PAGE */
+/*
+============== background Color====================
+*/
+.b-line, .btn-text, .dark-bg, .hover-bg:hover, .ui-timeline .tl-item .tl-body .tl-entry .btn-primary, .abt-block__slider .owl-dots .owl-dot,
+.bullet_round:after, .second_righ:after, .owl-prev, .owl-next, .arrow_theme .owl-prev, .arrow_theme .owl-next,
+.faq .collape-plus, .panel-title a i, .container-filter li a.active, .container-filter li a:hover,
+.link-zoom a.same_style, .project-info, .blog-date, .pagination-nav ul li.active a, .pagination-nav ul li:hover a,
+#related-project .owl-prev:hover, #related-project .owl-next:hover, .sidebar-widget .widget-tag li a:hover,
+.box-hover:hover .team-block, .page-signin .body-inner:before, .ui-input-group .input-bar:before, .ui-input-group .input-bar:after,
+a.btn.xplus-btn.pricing.active, .btn.xplus-btn, a.btn.xplus-btn.pricing:hover, .skinonebg, .pricing-btn .get-start, .bg-color3, .bg-color,
+.ribbon.blue, .btn-default, .bar, .btn-default:hover, .color-switch .owl-controls .owl-page span, .tags li a, .shop .product-overlay div:hover,
+.nf-carousel-theme-top .owl-controls .owl-nav .owl-prev:hover, .nf-carousel-theme-top .owl-controls .owl-nav .owl-next:hover,
+.nf-carousel-theme .owl-controls .owl-nav .owl-prev, .nf-carousel-theme .owl-controls .owl-nav .owl-next, .sidebar-widget:before {
+  background: #ABA044;
+}
+
+.social_hover {
+  background: #ABA044;
+  /* The Fallback */
+  background: rgba(251, 172, 2, 0.8);
+}
+
+.bullet_round:before, .second_righ:before {
+  box-shadow: 0 0 6px 6px #ABA044;
+}
+
+.skinoneplancolor, div .secondary_bg {
+  background: #c88902;
+}
+
+/*
+============== Text Color====================
+*/
+a:focus, a:hover, .abt-box__content-link-arrow, .abt-box_link-arrow, .abt-box__content-link:hover, .abt-box_link:hover,
+.abt-block_link-arrow, .abt-block_link:hover, .mv-block__vision_link:hover, .mv-block__mission_link:hover,
+.mv-block__vision_link-arrow, .mv-block__mission_link-arrow, .solution_box i.color_orenge, .single-fact .icon-boxed, .star i,
+.abt__link-arrow, .abt__link:hover, .gallery-heading h4 a:hover, .post-meta span > a > i, .pagination-nav ul li a,
+.sidebar-widget ul li a:hover, .lead-point li, .blog-post .fa-tag, .post-meta span > a > i, .custom-check:before,
+.ui-input-group > input:focus ~ label, .ui-input-group > textarea:focus ~ label, .color-primary, a.color-primary,
+.pricing-2 .price, .pricing-2 .currency-symbol, .price-blue--color, .big-font i, .contact-info .info li .icon,
+.contact .icon-circle, .gallery-heading h4 a, .single-sidebar-widget .special-links li:hover a, .single-sidebar-widget .special-links li a.active,
+.single-sidebar-widget .special-links li a.active:after, .sidebar-widget ul li a {
+  color: #ABA044;
+}
+
+/*
+============== Border Color====================
+*/
+.btn-text, .v-line, .ui-timeline .tl-item .tl-body .tl-entry .btn-primary, .testimonial-block .small-divider,
+#related-project .owl-prev:hover, #related-project .owl-next:hover, .pagination-nav ul li a, .widget-tag li a,
+.widget-search input[type=text]:focus, .blog-post-hr input[type=text]:focus, .blog-post-hr textarea:focus,
+.custom-check, .pricing-2 .pricing_table.active, a.btn.xplus-btn.pricing.active,
+.btn.xplus-btn, a.btn.xplus-btn.pricing:hover, .pricing-wrap, .client-avtar,
+.contact-form input[type=text]:focus, .contact-form textarea:focus, .contact .icon-circle,
+.arrow_theme .owl-prev:hover, .arrow_theme .owl-next:hover, .single-sidebar-widget .special-links li a:before {
+  border-color: #ABA044;
+}
+
+.team-member .inner-box .overlay-box:after, .ui-input-group > input:focus, .rightGrip:before, .leftGrip:before {
+  border-bottom-color: #ABA044;
+}
+
+.ribbon:before, .ribbon:after {
+  border-top-color: #ABA044;
+}
