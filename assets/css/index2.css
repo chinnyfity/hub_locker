@@ -4,8 +4,9 @@
 }
 
 
-.input_container, .close-icon {
+.input_container, .close-icon, .close-icon1 {
 	position: relative;
+	
 }
 
 #country_list_id {
@@ -14,13 +15,18 @@
 
 #country_list_id{
   width: 42%;
-  margin-left:5.3em;
+  /* width: 94%; */
+  width: calc(94% / 2.26);
+  margin-left_:5.3em;
+  margin-right_: calc(50% - 50px);
+  right_: calc(100% - 50px);
+  left: 5.7% !important;
   margin-top:-1px;
   border: 1px solid #999;
   position: absolute !important;
   top: 21.6em !important;
   color:#222;
-  z-index: 99 !important;
+  z-index: 999 !important;
   background: rgba(238, 238, 238, 0.9);
   list-style: none;
   padding-top: 10px;
@@ -49,7 +55,7 @@ li.set_item:hover {
   	color:#D7B343;
 }
 
-.close-icon {
+.close-icon, .close-icon1 {
 	border:1px solid transparent;
 	background-color: transparent;
 	display: inline-block;
@@ -62,7 +68,7 @@ li.set_item:hover {
 	right: 13.5em;
 }
 
-.close-icon:after {
+.close-icon:after, .close-icon1:after {
 	content: "X";
 	display: block;
 	width: 25px;
@@ -70,7 +76,7 @@ li.set_item:hover {
 	position: absolute;
 	background-color: #DE4D2D;
 	z-index:1;
-	right: 35px;
+	right: 27px;
 	top: 17px;
 	margin: auto;
 	padding: 2px 2px 3px 1.5px;
@@ -83,11 +89,11 @@ li.set_item:hover {
 	cursor: pointer;
 }
 
-.close-icon:hover:after {
+.close-icon:hover:after, .close-icon1:hover:after {
 	background-color: #bb3f23;
 }
 
-.close-icon {
+.close-icon, .close-icon1 {
 	display: none;
 }
 
@@ -149,16 +155,21 @@ button{
 table.all_tables1_ th{
 	background:#242a33 !important; font-size:14px; color:#eee !important;
 	text-align: left !important;
-	display: none !important;
+	display: none_ !important; visibility:hidden !important;
+	padding: 0!important; border: none !important;
 }
+
 .all_tables1_ td{
 	color:#333 !important; font-size:14px; text-align: left !important;
 	padding: 12px 10px 12px 10px !important;
 	font-weight: 600; line-height: 20px;
+	border: none !important
 }
 
+.all_tables1_ .dtr-title{display: none !important}
+
 .all_tables1_ td a{color:#ee4747 !important; font-size:14px;}
-.all_tables1_{width:99% !important; overflow: hidden !important;}
+table.all_tables1_{width:99% !important; overflow: hidden !important;}
 
 .btn_rent{
 	background-color: #47b464;
@@ -202,7 +213,9 @@ table.all_tables1_ th{
     transform-style: preserve-3d;
     transition: all 0.2s ease;
 	border-radius: 5px;
+	
 }
+
 
 .textbox-field {
     display: flex;
@@ -227,7 +240,7 @@ table.all_tables1_ th{
 .view_size{
 	position: relative;
 	z-index: 99;
-	margin-top: -10px;
+	margin-top: 14px;
 	font-size: 13px;
 }
 
@@ -364,7 +377,7 @@ table.all_tables1_ th{
 }
 
 .main-banner .banner-text h2 {
-	font-size: 50px;
+	font-size: 40px;
 	color: #ffffff;
 	font-weight: 500 !important;
 	margin-bottom: 0px;
@@ -722,7 +735,14 @@ table.all_tables1_ th{
 
 	.textbox {
 		width: 100%;
-		height: 54px;
+		height: 49px;
+	}
+
+	.textbox-action{
+		width: 290px;
+		margin-top: 4.95px;
+		background: url(../images/btns.jpg) no-repeat 0 0;
+		background-size: 100% 95% !important;
 	}
 
 	.featured_sel select{
@@ -748,16 +768,16 @@ table.all_tables1_ th{
 	}
 
 	.textbox-action{
-		width: 60px;
+		width: 56px;
 		margin-top: 3px;
 		background: url(../images/btns2.jpg) no-repeat 0 0;
-		margin-right: -4px;
+		margin-right: 3px !important;
 	}
 
 	.textbox-text {border-radius: 6px;}
 
 	.main-banner .banner-text h2 {
-		font-size: 34px !important;
+		font-size: 29px !important;
 		line-height: 30px !important;
 		padding: 10px 0;
 	}

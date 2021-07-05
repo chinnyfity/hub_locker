@@ -14,23 +14,12 @@
 | path to your installation.
 |
 */
-// $config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
-// $config['base_url'] .= "://".$_SERVER['HTTP_HOST'];
-// $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-
-// i removed this above cus someone can use it and hack it and it will still pick his domain
 
 
-
-$servers = ($_SERVER['HTTP_HOST'] == "localhost")? "http://localhost/hub_locker1/":"https://websitename.ng/";
-
-/* if (substr($_SERVER['HTTP_HOST'], 0, 4) === 'www.') {
-    //header('Location: '.$protocol.'www.'.$_SERVER    ['HTTP_HOST'].'/'.$_SERVER['REQUEST_URI']);
-    header('Location: https://websitename.com/');
-    exit;
-} */
-
+$servers = ($_SERVER['HTTP_HOST'] == "localhost")? "http://localhost/hub_locker/":"https://hublocker.embexdigital.com.ng/";
 $config['base_url']	= $servers; 
+
+
 
 /*
 |--------------------------------------------------------------------------

@@ -3,7 +3,8 @@
 <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 		<title>Hub Locker</title>
 		<link rel="shortcut icon" type="image/x-icon" href="<?=base_url();?>assets/images/favicon.png">
 		
@@ -39,7 +40,14 @@
 
 		<link rel='stylesheet' href='<?=base_url();?>assets/css/custom-bootstrap-margin-padding.css' type='text/css' media='all' />
 
-		<!-- jquery.dataTables.min1.css -->
+
+		
+	<!-- Bootstrap 4.0-->
+	<link rel="stylesheet" href="<?=base_url()?>assets/vendor_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="<?=base_url()?>assets/css2/master_style.css">
+	
+
+
 
 	</head>
 	<body>
@@ -91,7 +99,6 @@
 										<li class="pl-30 pl-xs-0"><a href="<?=base_url();?>account/">My Account</a></li>
 										<li><a href="tel:080-188-0872">080-188-0872</a></li>
 										<li class="pr-30"><a href="<?=base_url();?>pay-bill/"><span class="pay_btn mb-xs--30">PAY YOUR BILL</span></a></li>
-										
 									</ul>
 
 								</nav>
@@ -130,6 +137,7 @@
 							<img src="<?=base_url();?>assets/images/banner/slider1.jpg"  alt=""  class="rev-slidebg" >
 							<!-- LAYERS -->
 							<!-- LAYER NR. 2 -->
+							<!-- data-x="['left','left','left','left']" data-hoffset="['20','50','50','10']" -->
 							<div class="tp-caption Newspaper-Title tp-resizeme "
 							id="slide-129-layer-1"
 							data-x="['left','left','left','left']" data-hoffset="['20','50','50','10']"
@@ -148,14 +156,14 @@
 							data-splitin="none"
 							data-splitout="none"
 							data-responsive_offset="on" >
-								<div class="banner-text mt--10 mt-xs-0">
+								<div class="banner-text mt--5 mt-xs-0">
 									<h2>Find a Locker</h2>
 									<form method="post" autocomplete="off" action="javascript:;">
 										<div class="search input_container">
 											<div class="textbox">
 												<div class="textbox-box">
 													<div class="textbox-field">
-														<input class="textbox-text txtsearchs" id="" type="text" placeholder="Enter City or State" />
+														<input class="textbox-text txtsearchs" id="txtsearchs" type="text" placeholder="Enter City or State" onkeyup="autocomplet()" />
 													</div>
 													<button type="button" class="close-icon"></button>
 
@@ -199,7 +207,7 @@
 											<div class="textbox">
 												<div class="textbox-box">
 													<div class="textbox-field">
-														<input class="textbox-text " id="" type="text" placeholder="Enter City or State"  />
+														<input class="textbox-text txtsearchs1" id="txtsearchs1" type="text" placeholder="Enter City or State" onkeyup="autocomplet1()" />
 													</div>
 													<button type="button" class="close-icon1"></button>
 
@@ -226,7 +234,7 @@
 		
 
 		<div class="gray-bg1 mt-xs--20_ pt-15 pb-15 count_bg">
-			<div class="container pl-0 pl-md-30 pl-xs-20">
+			<div class="container_ pl-30 pr-30 pl-md-30 pl-xs-20 pr-xs-10">
 				<div class="row">
 
 					<div class="col-lg-9 pl-0" style="backgrounds: red">
@@ -236,21 +244,21 @@
 					</div>
 
 					<div class="col-lg-3 text-right" style="backgrounds: yellow">
-						<div class="mt--5 mt-xs--30">
+						<div class="mt--5 mt-xs--35">
 							<label>Sort By:</label>
 							<select class="txtsort">
 								<option value="lowest">Lowest Price</option>
 								<option value="highest">Highest Price</option>
 							</select>
 						</div>
-						<p class="view_size"><a href="">View the guide size</a></p>
+						<p class="view_size"><a href="#">View the guide size</a></p>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- About_us -->
-		<div class="section-bar pt-20">
+		<div class="section-bar pt-20 mt-xs-20">
 			<div class="container_ pl-20 pr-20">
 				<div class="row pb-60 pb-xs-30 text-center">
 
@@ -269,7 +277,7 @@
 
 
 					<div class="col-sm-10 p-xs-0">
-						<div class="text-left featured_sel mt-xs-15">
+						<div class="text-left featured_sel mt-xs-15 mb-xs-5" style="margin-left:6px !important;">
 							<select class="txt_size">
 								<option value="small">Small</option>
 								<option value="medium">Medium</option>
@@ -277,14 +285,14 @@
 							</select>
 						</div>
 
-						<div class="box-body mt--10">
+						<div class="box-body_ mt-0" style="overflow: hidden !important; width:99%">
 							<div class="table-responsive project-table">
-								<table id="" class="table table-striped table-bordered display responsive wrap all_tables1_ stripe" cellspacing="0">
+								<table id="tbl_search" class="table table-striped table-bordered display responsive wrap all_tables1_" cellspacing="0">
 									<thead>
 										<tr>
 											<th></th>
 											<th></th>
-											<th></th>
+											<th class="mb-none"></th>
 											<th></th>
 											<th></th>
 											<th></th>
@@ -328,19 +336,19 @@
 						<h4>Quick Links</h4>
 						<ul>
 							<li>
-								<a href="#">Home</a>
+								<a href="<?=base_url();?>">Home</a>
 							</li>
 							<li>
-								<a href="#">Find a Locker</a>
+								<a href="<?=base_url();?>find-a-locker/">Find a Locker</a>
 							</li>
 							<li>
-								<a href="#">Size Guide</a>
+								<a href="<?=base_url();?>size-guide/">Size Guide</a>
 							</li>
 							<li>
-								<a href="#">Locations</a>
+								<a href="<?=base_url();?>locations/">Locations</a>
 							</li>
 							<li>
-								<a href="#">Help Center</a>
+								<a href="<?=base_url();?>help-center/">Help Center</a>
 							</li>
 						</ul>
 					</div>
@@ -349,16 +357,16 @@
 						<h4>Quick Links</h4>
 						<ul>
 							<li>
-								<a href="#">Account</a>
+								<a href="<?=base_url();?>account/">Account</a>
 							</li>
 							<li>
-								<a href="#">Pay Your Bills</a>
+								<a href="<?=base_url();?>pay-bill/">Pay Your Bills</a>
 							</li>
 							<li>
-								<a href="#">Privacy & Policy</a>
+								<a href="<?=base_url();?>privacy-policy/">Privacy & Policy</a>
 							</li>
 							<li>
-								<a href="#">Terms of Use</a>
+								<a href="<?=base_url();?>terms/">Terms of Use</a>
 							</li>
 						</ul>
 					</div>
@@ -378,24 +386,21 @@
 			</div>
 		</footer>
 
-		<!-- Site Wraper End -->
+
 		<script type="text/javascript" src="<?=base_url();?>assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="<?=base_url();?>assets/js/bootstrap.min.js"></script>
 		<script src="<?=base_url();?>assets/js/jquery.easing.js" type="text/javascript"></script>
 
-		<!-- fancybox Js -->
 		<script src="<?=base_url();?>assets/js/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
 		<script src="<?=base_url();?>assets/js/jquery.fancybox.pack.js" type="text/javascript"></script>
-		<!-- carousel Js -->
+
 		<script src="<?=base_url();?>assets/js/owl.carousel.min.js" type="text/javascript"></script>
 
-		<!-- masonry,isotope Effect Js -->
 		<script src="<?=base_url();?>assets/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 		<script src="<?=base_url();?>assets/js/isotope.pkgd.min.js" type="text/javascript"></script>
 		<script src="<?=base_url();?>assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
 		<script src="<?=base_url();?>assets/js/jquery.appear.js" type="text/javascript"></script>
 
-		<!-- revolution Js -->
 		<script type="text/javascript" src="<?=base_url();?>assets/js/jquery.themepunch.tools.min.js"></script>
 		<script type="text/javascript" src="<?=base_url();?>assets/js/jquery.themepunch.revolution.min.js"></script>
 		<script type="text/javascript" src="<?=base_url();?>assets/extensions/revolution.extension.slideanims.min.js"></script>
@@ -403,10 +408,9 @@
 		<script type="text/javascript" src="<?=base_url();?>assets/extensions/revolution.extension.navigation.min.js"></script>
 		<script type="text/javascript" src="<?=base_url();?>assets/extensions/revolution.extension.parallax.min.js"></script>
 		<script type="text/javascript" src="<?=base_url();?>assets/js/jquery.revolution.js"></script>
-		<!-- popup -->
+
 		<script src="<?=base_url();?>assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
 
-		<!-- custom Js -->
 		<script src="<?=base_url();?>assets/js/custom2.js" type="text/javascript"></script>
 
 
@@ -417,24 +421,21 @@
 		<script src="<?=base_url();?>assets/js1/dataTables.responsive.min.js" type="text/javascript"></script>
 		<script src="<?=base_url();?>assets/js1/dataTables.bootstrap.min.js" type="text/javascript"></script>
 
+
+
 		<script src="<?=base_url();?>assets/js/jscripts.js" type="text/javascript"></script>
-
-
-
 
 
 		<script>
 			var site_urls = $('#txtsite_url').val();
 			var txt_pagename = $('#txtpage_name').val();
 
-
-			//alert('site_urls');
-			//alert(txt_pagename);
 			var urls = site_urls+"node/fetch_records/"+txt_pagename+"/";
 			var dataTable = $('#tbl_search').DataTable({
 				"processing": true,
 				"serverSide": true,
 				"pageLength": 25,
+				//'paging': true,
 				"order":[],
 				"ajax":{
 					url : urls,
@@ -448,14 +449,9 @@
 				],
 
 				dom: 'lBfrtip',
-				//buttons: ['excel',  'csv', 'pdf', 'print', 'copy',],
 				"lengthMenu": [ [10, 25, 50, -1], [10, 25, 50, "All"] ]
 			});
-
-
-			
 		</script>
-
 	</body>
 
 </html>

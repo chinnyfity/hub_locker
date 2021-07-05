@@ -4,7 +4,25 @@ var page_name = $('#page_name').val();
 
 
 $(document).ready(function(){
+
+  setTimeout(function(){
+    var count = $('#tbl_search').DataTable().rows().eq(0).length;
+    $('.count_items div').html(count + ' Open Lockers Available');
   
+    
+    // if ($(window).width() <= 900) {
+    //   $('.mb-none').addClass('none');
+    // }else{
+    //   $('.mb-none').addClass('none');
+    // }
+
+    // var dataTable = $('#tbl_search').DataTable();
+    // dataTable.clear().draw();
+
+    
+
+   
+  },2000);
 
 });
 
@@ -30,6 +48,17 @@ $(document).ready(function(){
             $('#country_list_id').hide();
             $('#country_list_id').html('');
           }
+
+          /* var count=0;
+          $('#tbl_name tr').each(function(){
+              count++;
+          }); */
+
+          setTimeout(function(){
+            var count = $('#tbl_search').DataTable().rows().eq(0).length;
+            $('.count_items div').html(count + ' Open Lockers Available');
+          },300);
+
         },error : function(data){
           
         }
@@ -59,6 +88,7 @@ $(document).ready(function(){
     else
       $('.close-icon').fadeOut('fast');
   });
+  
 
 
   $('body').on('click', '.close-icon', function(e) {
@@ -66,7 +96,14 @@ $(document).ready(function(){
     $('.txtsearchs').val('');
     $('.txtsearchs').focus();
     $(this).fadeOut('fast');
-    dataTable.clear().draw();
+    
+    $('.dataTables_filter input').val('');
+    $('.dataTables_filter input').trigger('keyup');
+
+    setTimeout(function(){
+      var count = $('#tbl_search').DataTable().rows().eq(0).length;
+      $('.count_items div').html(count + ' Open Lockers Available');
+    },300);
   });
 
 
@@ -85,20 +122,12 @@ $(document).ready(function(){
   });
 
 
-  /* $('body').on('change', '.txtsort', function (e) {
-    var txtsort = $(this).val();
-    var datastring='txtsort='+txtsort;
-    $.ajax({
-      url : site_urls+"node/filter_sort",
-      type: 'POST',
-      data: datastring,
-      success:function(data){
-        $('#tbl_search').html(data);
-      },error : function(data){
-        
-      }
-    });
-  }); */
+  $('body').on('keyup', '.txtsearchs', function (e) {
+    var txtsearchs = $(this).val();
+    $('.txtsearchs1').val(txtsearchs);
+    $('.dataTables_filter input').val(txtsearchs);
+    $('.dataTables_filter input').trigger('keyup');
+  });
 
 
   function autocomplet1() {
@@ -118,6 +147,12 @@ $(document).ready(function(){
             $('#country_list_id').hide();
             $('#country_list_id').html('');
           }
+          
+          setTimeout(function(){
+            var count = $('#tbl_search').DataTable().rows().eq(0).length;
+            $('.count_items div').html(count + ' Open Lockers Available');
+          },300);
+
         },error : function(data){
           
         }
@@ -130,7 +165,8 @@ $(document).ready(function(){
 
 
   $('body').on('keyup', '.txtsearchs1', function(e) {
-    var searchTerm = $('.txtsearchs1').val();
+    var searchTerm = $(this).val();
+    $('.txtsearchs').val(searchTerm);
     if(searchTerm != "")
       $('.close-icon').fadeIn('fast');
     else
@@ -143,7 +179,14 @@ $(document).ready(function(){
     $('.txtsearchs1').val('');
     $('.txtsearchs1').focus();
     $(this).fadeOut('fast');
-    dataTable.clear().draw();
+    
+    $('.dataTables_filter input').val('');
+    $('.dataTables_filter input').trigger('keyup');
+
+    setTimeout(function(){
+      var count = $('#tbl_search').DataTable().rows().eq(0).length;
+      $('.count_items div').html(count + ' Open Lockers Available');
+    },300);
   });
 
 

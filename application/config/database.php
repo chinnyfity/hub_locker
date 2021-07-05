@@ -48,10 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$user = ($_SERVER['HTTP_HOST'] == "localhost")? "root" : "put_live_username_here";
-$passwords = ($_SERVER['HTTP_HOST'] == "localhost")? "" : "put_live_password_here";
-$databasename = ($_SERVER['HTTP_HOST'] == "localhost")? "hublocker" : "put_live_database_here";
-
+$user = ($_SERVER['HTTP_HOST'] == "localhost")? "root" : "embexdig_locker";
+$passwords = ($_SERVER['HTTP_HOST'] == "localhost")? "" : "EmBeXDigi_0##_";
+$databasename = ($_SERVER['HTTP_HOST'] == "localhost")? "hublocker" : "embexdig_hublocker";
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = $user;

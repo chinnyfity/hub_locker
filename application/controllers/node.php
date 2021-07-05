@@ -87,13 +87,13 @@ class Node extends CI_Controller {
             
             if($url_task=="lockers"){
                 $titles = $row->titles;
-                $descrip = "<font style='line-height:18px'>$row->descrip</font>";
+                $descrip = "<div style='line-height:18px;'>$row->descrip</div>";
                 $descrip2 = $row->descrip2;
                 $qty = $row->qty;
                 $city1 = $row->city1;
                 $state1 = $row->state1;
                 $addrs = ucwords(strtolower($row->addrs));
-                $locs = "<p style='font-weight:normal!important;font-size:13px;line-height:18px!important;color:#c46e17;margin-top:4px;opacity:0.9'>$addrs $city1</p>";
+                $locs = "<p style='font-weight:normal!important;font-size:13px;line-height:18px!important;color:#c46e17;margin:4px 0 0 0;opacity:0.9'>$addrs $city1</p>";
 
                 if($qty >=1) $qty="$qty Available"; else $qty="None Available";
             }
